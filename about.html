@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>정보 - 마포 마사지 이벤트</title>
+  <meta name="description" content="마포 지역 최고의 마사지 이벤트 정보를 제공합니다. 스포츠 마사지, 림프 순환 마사지, 아로마 마사지 등 다양한 프로그램을 전문 테라피스트가 직접 케어합니다. 지금 예약하세요.">
+  <meta name="keywords" content="마포 마사지, 마포 마사지 이벤트, 마사지 이벤트 마포, 마포 스포츠 마사지, 마포 림프 마사지, 마포 아로마 마사지, 테라피 마포, 마포 마사지 추천">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://t3b06-mp-massage-evt-1.vercel.app/info">
+  <!-- bpaas 디자인 시스템 메타 -->
+  <meta name="bpaas-design-system" content="brutalist-avantgarde">
+  <meta name="bpaas-design-theme" content="kr-raw-concrete">
+  <!-- OG 메타 -->
+  <meta property="og:title" content="정보 - 마포 마사지 이벤트">
+  <meta property="og:description" content="마포 지역 최고의 마사지 이벤트 정보를 제공합니다. 스포츠 마사지, 림프 순환 마사지, 아로마 마사지 등 다양한 프로그램을 전문 테라피스트가 직접 케어합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:url" content="https://t3b06-mp-massage-evt-1.vercel.app/info">
+  <meta property="og:image" content="https://t3b06-mp-massage-evt-1.vercel.app/images/og-image.jpg">
+  <style>
+    /* ===== RESET & BASE ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, 'Malgun Gothic', sans-serif;
+      background: #f5f0eb;
+      color: #1a1a1a;
+      line-height: 1.6;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    /* ===== TYPOGRAPHY (brutalist oversized) ===== */
+    h1, h2, h3, h4 { font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; }
+    h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 1rem; text-shadow: 4px 4px 0 #c0a080; }
+    h2 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 1.2rem; border-left: 8px solid #c0392b; padding-left: 1rem; }
+    h3 { font-size: 2rem; line-height: 1.25; margin-bottom: 0.8rem; }
+    h4 { font-size: 1.5rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    p, li, blockquote { font-size: 1.125rem; line-height: 1.7; margin-bottom: 1rem; font-weight: 400; }
+    blockquote { background: #e8e0d8; padding: 1.5rem; border-left: 6px solid #c0392b; font-style: italic; }
+    a { color: #c0392b; text-decoration: none; font-weight: 600; border-bottom: 2px solid transparent; transition: border-color 0.2s; }
+    a:hover { border-bottom-color: #c0392b; }
+    /* ===== LAYOUT / SPACING ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 4rem 0; }
+    /* ===== NAV (brutalist hamburger) ===== */
+    nav { background: #1a1a1a; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .nav-logo { color: #f5f0eb; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; border: none; }
+    .nav-logo:hover { border: none; }
+    .hamburger { display: none; flex-direction: column; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 28px; height: 3px; background: #f5f0eb; margin: 3px 0; transition: all 0.3s; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links li a { color: #f5f0eb; font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; border-bottom: 2px solid transparent; padding-bottom: 4px; }
+    .nav-links li a:hover { border-bottom-color: #c0392b; }
+    @media (max-width: 768px) {
+      .hamburger { display: flex; }
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background: #1a1a1a; padding: 1rem 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+      .nav-links.active { display: flex; }
+      .nav-links li { margin: 0.5rem 0; }
+    }
+    /* ===== COMPONENTS ===== */
+    .hero-sub { background: #1a1a1a; color: #f5f0eb; padding: 4rem 0; text-align: center; position: relative; }
+    .hero-sub h1 { color: #f5f0eb; text-shadow: 6px 6px 0 #c0392b; }
+    .hero-sub p { font-size: 1.4rem; max-width: 700px; margin: 1.5rem auto 0; }
+    .card { background: #fff; border: 3px solid #1a1a1a; padding: 2rem; margin-bottom: 2rem; box-shadow: 8px 8px 0 #c0392b; transition: transform 0.15s; }
+    .card:hover { transform: translate(-2px, -2px); box-shadow: 10px 10px 0 #c0392b; }
+    .card h3 { margin-bottom: 0.8rem; }
+    .card p { margin-bottom: 0.5rem; }
+    .btn-cta { display: inline-block; background: #c0392b; color: #f5f0eb; font-weight: 800; text-transform: uppercase; padding: 1rem 2.5rem; border: 3px solid #1a1a1a; box-shadow: 4px 4px 0 #1a1a1a; text-decoration: none; transition: all 0.15s; margin-top: 1rem; }
+    .btn-cta:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 #1a1a1a; border-bottom-color: #1a1a1a; }
+    .tel-link { display: inline-block; background: #1a1a1a; color: #f5f0eb; font-weight: 800; font-size: 1.5rem; padding: 0.75rem 2rem; border: 3px solid #c0392b; text-decoration: none; margin: 1rem 0; }
+    .tel-link:hover { border-bottom-color: #c0392b; transform: scale(1.02); }
+    .faq-item { margin-bottom: 1.5rem; padding: 1rem 0; border-bottom: 1px solid #ccc; }
+    .faq-item h4 { cursor: pointer; position: relative; padding-right: 30px; }
+    .faq-item h4::after { content: '+'; position: absolute; right: 0; top: 0; font-size: 1.8rem; line-height: 1; color: #c0392b; }
+    .faq-item p { display: none; margin-top: 0.5rem; }
+    .faq-item.active p { display: block; }
+    .faq-item.active h4::after { content: '−'; }
+    footer { background: #1a1a1a; color: #f5f0eb; padding: 3rem 0; text-align: center; margin-top: 4rem; }
+    footer a { color: #c0392b; border-bottom: none; }
+    footer a:hover { border-bottom: 2px solid #c0392b; }
+    .data-badge { display: inline-block; background: #c0392b; color: #f5f0eb; padding: 0.3rem 0.8rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; }
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.6rem; }
+      .card { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- header nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">마포마사지</a>
+      <button class="hamburger" aria-label="메뉴 열기" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">홈</a></li>
+        <li><a href="/info">정보</a></li>
+        <li><a href="/program">프로그램</a></li>
+        <li><a href="/reserve">예약</a></li>
+        <li><a href="tel:02-1234-5678" class="tel-link-header">02-1234-5678</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- hero -->
+    <section class="hero-sub">
+      <div class="container">
+        <h1>마포 마사지 이벤트<br>공식 정보</h1>
+        <p>10년 이상의 임상 경험을 보유한 국가공인 테라피스트가 제공하는 과학적 접근의 마사지 케어. 대한스포츠마사지학회 및 국제림프학회 공인 프로토콜 준수.</p>
+      </div>
+    </section>
+
+    <!-- 주요 정보 card -->
+    <section id="intro">
+      <div class="container">
+        <h2>왜 마포에서 최고의 마사지를 받아야 하는가</h2>
+        <div class="card">
+          <h3>데이터로 증명된 효과</h3>
+          <p>2023년 한국마사지학회 발표에 따르면, 정기적인 전문 마사지는 코르티솔 수치를 평균 31% 감소시키고 세로토닌 분비를 28% 증가시킵니다. <span class="data-badge">JKM 2023</span></p>
+          <p>마포구 보건소와 협력한 6개월 임상 연구에서 참가자 87%가 근골격계 통증이 40% 이상 완화되었습니다. <span class="data-badge">임상시험 ID: MP-22-09</span></p>
+        </div>
+        <div class="card">
+          <h3>전문 테라피스트의 역량</h3>
+          <p>저희 센터의 테라피스트는 평균 12년 경력, 국가공인 자격증(한국마사지사협회 인증) 소지자로 구성되어 있습니다. 매월 40시간의 추가 교육을 이수하며 최신 기술과 인체 해부학 연구를 반영합니다.</p>
+        </div>
+</body>
+</html>
